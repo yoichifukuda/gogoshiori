@@ -6,7 +6,7 @@
 # git pull
 
 # Download latest CSV from spreadsheet datbase
-# curl -sL -o public/data/all.csv "https://script.google.com/macros/s/AKfycbwYoxr5Zl97nRETMUyEcMBuDR2gG1WWhQ8BAVq6vYuiQR8y5oRFjfhT88l2-MbrgwJl6w/exec" 
+curl -sL -o public/data/all.csv "https://script.google.com/macros/s/AKfycbwYoxr5Zl97nRETMUyEcMBuDR2gG1WWhQ8BAVq6vYuiQR8y5oRFjfhT88l2-MbrgwJl6w/exec" 
 
 # all.json
 python3 csv2json_small.py public/data/all.csv public/data/
