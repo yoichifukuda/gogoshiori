@@ -1,3 +1,13 @@
+function onLocationFound(e) {
+  const radius = e.accuracy / 2;
+
+  const locationMarker = L.marker(e.latlng).addTo(map)
+    .bindPopup("現在地").openPopup();
+  const locationCircle = L.circle(e.latlng, radius).addTo(map);
+
+  map.setView(e.latlng, 14);
+}
+
 function getBlockFromUrlParam() {
   const params = new URL(document.location.href).searchParams
   const block = params.get("block")
