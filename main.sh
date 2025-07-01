@@ -2,7 +2,7 @@
 # set -euo pipefail
 
 # cd ~/tokyo2024-poster-map/ #Path to the folder
-# cd /mnt/f/Users/fukuda/Documents/GitHub/gogoshiori
+cd /mnt/f/Users/fukuda/Documents/GitHub/gogoshiori
 
 # git pull
 
