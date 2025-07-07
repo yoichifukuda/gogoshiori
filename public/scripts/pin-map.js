@@ -77,6 +77,7 @@ async function loadBoardPins(pins, layer, status=null) {
     pins = pins.filter(item => item.status == status);
   }
   pins.forEach(pin => {
+    console.log(pin)
     var marker = L.circleMarker([pin.lat, pin.long], {
       radius: 8,
       color: 'black',
@@ -86,7 +87,6 @@ async function loadBoardPins(pins, layer, status=null) {
       border: 1,
     })
     .addTo(layer);
-    console.log(pin)
     marker.bindPopup(`<b>${areaList[pin.area_id]["area_name"]} ${pin.name}</b><br>ステータス: ${getStatusText(pin.status)}<br>備考: ${getPinNote(pin.note)}<br>座標: <a href="https://www.google.com/maps/search/${pin.lat},+${pin.long}" target="_blank" rel="noopener noreferrer">(${pin.lat}, ${pin.long})</a>`);
   });
 }
