@@ -17,6 +17,7 @@ def main(input_path, output_path):
     area_blocks = {
         '23-east': '23区東部',
         '23-west': '23区西部',
+        '23-south': '23区南部',
         '23-city': '23区都心部',
         'tama-north': '多摩北部',
         'tama-south': '多摩南部',
