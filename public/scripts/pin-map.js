@@ -192,11 +192,11 @@ const smallBlock= getSmallBlockFromUrlParam()
 let allBoardPins;
 getBoardPins(block, smallBlock).then(function(pins) {
   allBoardPins = pins
-  // loadBoardPins(allBoardPins, overlays['削除'], 6);
+  loadBoardPins(allBoardPins, overlays['削除'], 6);
   loadBoardPins(allBoardPins, overlays['完了'], 1);
-  // loadBoardPins(allBoardPins, overlays['異常'], 2);
-  // loadBoardPins(allBoardPins, overlays['要確認'], 4);
-  // loadBoardPins(allBoardPins, overlays['異常対応中'], 5);
+  loadBoardPins(allBoardPins, overlays['異常'], 2);
+  loadBoardPins(allBoardPins, overlays['要確認'], 4);
+  loadBoardPins(allBoardPins, overlays['異常対応中'], 5);
   loadBoardPins(allBoardPins, overlays['未'], 0);
 });
 
